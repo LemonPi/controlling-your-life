@@ -1,6 +1,12 @@
 \documentclass{report}
 \usepackage{amsthm}
+\usepackage{enumitem}
+
 \newtheorem*{axiom}{Axiom}
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
 \title{Controlling Your Life}
@@ -11,7 +17,7 @@
 \chapter*{Preface}
 \addcontentsline{toc}{chapter}{Preface}
 
-This book is my attempt to form a theory on how to live life.
+This handbook is my attempt to form a theory on how to live life.
 First, I present what we generally want out of life, then the rest of the book
 describes how to maximize that. I also consider topics like morality
 and compassion in the context of this theory.
@@ -22,16 +28,48 @@ and compassion in the context of this theory.
 \end{axiom}
 
 Let's call happiness the $h$ function. It has some properties:
-\begin{enumerate}
+\begin{enumerate}[label=H\arabic*]
 	\item Happiness is transient and changes with time $\rightarrow$ it's
 	a function of time $h(t)$
-	\item We can only be so happy (or sad) at any time $\rightarrow h(t)$ is bounded
-	\item Sometimes we feel life is not worth living $\rightarrow$ let this be when $h(t) < 0$
+	\item \label{bounded} We can only be so happy (or sad) at any time $\rightarrow h(t)$ is bounded
+	\item \label{positive} Sometimes we feel life is not worth living $\rightarrow$ let this be when $h(t) < 0$
 \end{enumerate}  
 
 This axiom is motivated by asking what the meaning of life is.
 There's no satisfactory answer because we can always ask why.
 Being happy seems to be the most common and the one that
 other answers can be broken down to.
+
+\chapter{Sustaining Happiness}
+From property \ref{bounded}, it's clear that we need to sustain happiness. 
+This rules out going for intense, short bursts through drugs, 
+which offer diminishing returns in addition to shortening your lifespan. 
+
+From property \ref{positive}, you'll need to want to remain alive as long as
+possible. This means exercising and staying healthy so living is pleasant. 
+
+\section{Happiness Stability}
+Regardless of what your sources of happiness are, you should analyze
+each in terms of how stable it is in time, and what could take it away.
+
+Many people will find that they rely heavily on social interactions and the
+affection of others for their happiness. This source doesn't scale very well 
+since relationships have to be maintained at constant upkeep, 
+and people could easily change their disposition towards you.
+Furthermore, they could even hold your need for approval hostage, leading to
+abusive relationships. You really have no control over this source of happiness
+- you can't force someone to like you.
+
+
+On the other hand, useful skills and knowledge such as speaking a 
+foreign language or knowing how to program is entirely within your control.
+Acquiring them depends on your environment, parts of which you can't control,
+but for the most part they depend on your effort. Once acquired, they give
+you a greater sense of agency and \textbf{empower you to do more in life}.
+These sources scale very well because the more of them you have, the more
+you're able to achieve accomplishments, another stable source of happiness.
+
+You should care about and prioritize acquiring stable sources of happiness over
+unstable ones.
 
 \end{document}
